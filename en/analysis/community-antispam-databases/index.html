@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community anti-spam databases: how much real protection? | WATCHTOWER</title>
+  <meta name="description" content="WATCHTOWER analysis of 77,393 community entries: range rules, existing coverage, and genuinely new protection.">
+  <link rel="canonical" href="https://watchtower.montironi.fr/en/analysis/community-antispam-databases/">
+  <link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/">
+  <link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/analysis/community-antispam-databases/">
+  <link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:site_name" content="WATCHTOWER">
+  <meta property="og:title" content="Community anti-spam databases: how much real protection?">
+  <meta property="og:description" content="Millions of numbers can be covered by a few rules. What genuinely new protection remains in a community database of 77,393 entries?">
+  <meta property="og:url" content="https://watchtower.montironi.fr/en/analysis/community-antispam-databases/">
+  <meta property="og:image" content="https://watchtower.montironi.fr/assets/WATCHTOWER_Feature_Graphic_EN.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <link rel="stylesheet" href="../../../styles/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-banner"><img src="../../../assets/WATCHTOWER_Feature_Graphic_EN.png" width="1024" height="500" alt="WATCHTOWER banner presenting smart call blocking, offline operation, no advertising, and no data collection."></header>
+  <div class="transition-nav">
+    <div class="nav-inner">
+      <nav class="primary-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="./" aria-current="page">Anti-spam databases</a><a href="../../privacy/">Privacy</a><a href="../../support/">Support</a><a href="../../legal/">Legal</a></nav>
+      <div class="controls"><a class="control-link" href="../../../analyses/bases-antispam-communautaires/" hreflang="fr" lang="fr" aria-label="Lire cette analyse en français">FR</a><button class="theme-toggle" type="button" data-theme-toggle data-light-label="Light" data-dark-label="Dark" aria-pressed="false">Light</button></div>
+    </div>
+  </div>
+  <main id="main-content" class="analysis-main" tabindex="-1">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li>Analysis</li><li aria-current="page">Anti-spam databases</li></ol></nav>
+    <article class="analysis-article">
+      <header class="analysis-header">
+        <p class="eyebrow">Analysis</p>
+        <h1>Community anti-spam databases: millions of numbers, but how much real protection?</h1>
+        <p class="lead">The impressive figures associated with anti-spam applications do not always show how many numbers have actually been identified one by one. An analysis of a French system measures the gap between the advertised scale of its protection and the new information supplied by its community database.</p>
+      </header>
+
+      <section class="article-section" aria-labelledby="ranges-title">
+        <h2 id="ranges-title">A few hundred rules can represent millions of numbers</h2>
+        <p>A range-based rule does not correspond to a single number. It covers every number between its boundaries at once.</p>
+        <dl class="range-example">
+          <div><dt>Rule</dt><dd>01 62 xx xx xx</dd></div>
+          <div><dt>First number</dt><dd>01 62 00 00 00</dd></div>
+          <div><dt>Last number</dt><dd>01 62 99 99 99</dd></div>
+        </dl>
+        <p>This single rule therefore represents <strong>1 million theoretical numbers</strong>.</p>
+        <p>The 22 ranges corresponding to verified multipurpose numbers, known in France as NPV and defined by ARCEP, represent <strong>13,000,000 numbers</strong> on their own. The system studied also adds 727 rules covering blocks allocated to certain operators, representing <strong>2,302,000 numbers</strong>.</p>
+        <p>Some of these ranges overlap. After duplicates are removed, the two mechanisms cover approximately <strong>14,568,000 unique theoretical numbers</strong>, even before the community database is taken into account.</p>
+        <div class="key-stats" aria-label="Key figures for range-based coverage">
+          <div class="key-stat"><strong>22</strong><span>NPV ranges</span></div>
+          <div class="key-stat"><strong>727</strong><span>operator rules</span></div>
+          <div class="key-stat"><strong>14,568,000</strong><span>unique theoretical numbers</span></div>
+        </div>
+        <p class="note"><strong>Important distinction:</strong> millions of numbers can be covered by a few hundred rules even if none of them has been individually reported. The source document's title refers to 16 million blocked numbers, while its detailed calculation establishes approximately 14,568,000 unique theoretical numbers and does not explain the difference precisely. The 16 million figure is therefore not presented here as a calculated result.</p>
+      </section>
+
+      <section class="article-section" aria-labelledby="community-title">
+        <h2 id="community-title">A community database containing 77,393 entries</h2>
+        <p>The community file analysed contains exactly <strong>77,393 entries</strong>. Each one was compared with the ranges that were already being filtered.</p>
+        <p><strong>72,326 entries</strong> are already included in an existing ARCEP or operator range. This represents <strong>93.45%</strong> of the community database, leaving <strong>5,067 numbers</strong> outside those mechanisms.</p>
+        <p>More than nine out of ten community entries therefore do not extend filtering coverage: a broader rule would already have recognised the number. This does not mean the reports are false; it means they are redundant from a blocking perspective.</p>
+      </section>
+
+      <section class="article-section" aria-labelledby="journey-title">
+        <h2 id="journey-title">The community database, step by step</h2>
+        <p>The reduction below applies only to the 77,393 community entries. It does not describe a reduction from millions of numbers to 13.</p>
+        <ol class="number-journey" aria-label="Successive reduction of community entries">
+          <li class="journey-step"><strong>77,393</strong><span>community entries</span></li>
+          <li class="journey-step"><strong>72,326</strong><span>already covered</span></li>
+          <li class="journey-step"><strong>5,067</strong><span>remaining</span></li>
+          <li class="journey-step"><strong>4,188</strong><span>matched to MAJNUM</span></li>
+          <li class="journey-step"><strong>879</strong><span>to analyse</span></li>
+          <li class="journey-step"><strong>13</strong><span>unexplained ordinary French numbers</span></li>
+        </ol>
+      </section>
+
+      <section class="article-section" aria-labelledby="majnum-title">
+        <h2 id="majnum-title">What happens to the remaining 5,067 numbers?</h2>
+        <p>These 5,067 numbers were then compared with MAJNUM, ARCEP's official file listing numbering resources allocated to operators.</p>
+        <p>This comparison matches <strong>4,188 of them to official MAJNUM ranges</strong>. They were not necessarily already blocked by the system, but they belong to numbering resources that can be officially identified.</p>
+        <p>This leaves <strong>879 entries</strong>. A detailed examination shows that they are far from representing 879 new unwanted French numbers.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Breakdown of the 879 entries, horizontally scrollable on small screens">
+          <table class="analysis-table">
+            <caption>Full breakdown of the 879 entries remaining after comparison with MAJNUM</caption>
+            <thead><tr><th scope="col">Entry type</th><th scope="col">Count</th></tr></thead>
+            <tbody>
+              <tr><td>International numbers</td><td>562</td></tr>
+              <tr><td>Short numbers or short codes</td><td>201</td></tr>
+              <tr><td>Poorly normalised French numbers found in MAJNUM</td><td>29</td></tr>
+              <tr><td>Official 0700 M2M numbers</td><td>4</td></tr>
+              <tr><td>Resources found in GELNUM</td><td>33</td></tr>
+              <tr><td>Abnormal or problematic formats</td><td>37</td></tr>
+              <tr><td>Ordinary French numbers still unexplained</td><td>13</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Total</th><td>879</td></tr></tfoot>
+          </table>
+        </div>
+      </section>
+
+      <section class="article-section" aria-labelledby="unexplained-title">
+        <h2 id="unexplained-title">Of 879 entries, only 13 ordinary French numbers remain unexplained</h2>
+        <p>ARCEP's GELNUM file explains, in particular, 30 numbers beginning 06 44 63... and 3 numbers beginning 09 72 03 5.... These ranges no longer appear in MAJNUM because they are currently frozen, but they remain identified in the official data.</p>
+        <p>At the end of the analysis, the actual remainder is therefore <strong>13 ordinary French numbers</strong>. Even among those 13 cases, some have structures that may correspond to artificial or test values. It would therefore be incorrect to treat them automatically as 13 useful and certain community protections.</p>
+      </section>
+
+      <section class="article-section" aria-labelledby="meaning-title">
+        <h2 id="meaning-title">What this analysis actually shows</h2>
+        <p>The result is not that “16 million become 13”. That would be false: the millions refer to theoretical coverage obtained through ranges, while the 13 arise solely from the analysis of the 77,393 community entries.</p>
+        <p>The precise finding is this: of 77,393 community entries, 72,326 are already covered by existing rules. When the remaining 5,067 entries are examined using official numbering data and their actual formats, only 13 unexplained ordinary French numbers remain.</p>
+        <p>The gap between the raw size of the database and the genuinely new information it provides is therefore considerable.</p>
+      </section>
+
+      <section class="article-section" aria-labelledby="usefulness-title">
+        <h2 id="usefulness-title">Is a community database still useful?</h2>
+        <p>In some cases, yes. A newly used number may be reported before a general rule can identify it. A community database may therefore be useful for quickly detecting an isolated number.</p>
+        <p>However, continuing to add numbers that belong to already filtered ranges increases the size of the database without increasing actual protection in the same proportion. <strong>50,000 additional numbers</strong> in already blocked ranges do not represent 50,000 new protections.</p>
+        <p>The total number of entries in a community database is therefore a poor indicator of its effectiveness.</p>
+      </section>
+
+      <section class="conclusion" aria-labelledby="conclusion-title">
+        <p class="kicker">Conclusion</p>
+        <h2 id="conclusion-title">Measure new protection, not just raw size</h2>
+        <p>A database of 77,393 numbers appears substantial if its size is considered in isolation. Yet 93.45% of its entries are already included in filtered ranges. Most of the remainder can still be explained by official data, international numbers, short codes, or formatting problems. Only 13 ordinary French numbers ultimately remain unexplained.</p>
+        <p>The relevant question is therefore not “How many numbers does this database contain?”, but “How much genuinely new protection does it provide?” In the data studied, the difference between those two concepts is considerable.</p>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>WATCHTOWER - © 3D.MONTI - 2026</span><div class="footer-links"><a href="../../analysis/community-antispam-databases/">Analysis</a><a href="../../privacy/">Privacy</a><a href="../../support/">Support</a><a href="../../legal/">Legal</a></div></div></footer>
+  <script src="../../../scripts/theme.js"></script>
+</body>
+</html>
