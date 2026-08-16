@@ -202,6 +202,13 @@ h3 { font-size: 1.08rem; }
   color: #F4F8FF;
 }
 
+.store-actions { margin-top: 20px; }
+
+.store-link-pending {
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
