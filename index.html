@@ -1,13 +1,56 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WATCHTOWER - Votre tranquillite sous protection</title>
-  <meta name="description" content="WATCHTOWER aide a bloquer les appels indesirables avec un fonctionnement local, sans publicite, sans suivi publicitaire dans l'application et sans collecte de donnees personnelles.">
+  <title>WATCHTOWER - Bloqueur d'appels indésirables Android</title>
+  <meta name="description" content="WATCHTOWER est une application Android de blocage des appels indésirables. Filtrage local, sans compte, sans serveur et sans connexion Internet.">
   <link rel="canonical" href="https://watchtower.montironi.fr/">
   <link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/">
   <link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/">
+  <link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="WATCHTOWER">
+  <meta property="og:title" content="WATCHTOWER - Bloqueur d'appels indésirables Android">
+  <meta property="og:description" content="WATCHTOWER est une application Android de blocage des appels indésirables. Filtrage local, sans compte, sans serveur et sans connexion Internet.">
+  <meta property="og:url" content="https://watchtower.montironi.fr/">
+  <meta property="og:image" content="https://watchtower.montironi.fr/assets/WATCHTOWER_Feature_Graphic_FR.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="WATCHTOWER, bloqueur d'appels indésirables sur Android">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WATCHTOWER - Bloqueur d'appels indésirables Android">
+  <meta name="twitter:description" content="WATCHTOWER est une application Android de blocage des appels indésirables. Filtrage local, sans compte, sans serveur et sans connexion Internet.">
+  <meta name="twitter:image" content="https://watchtower.montironi.fr/assets/WATCHTOWER_Feature_Graphic_FR.png">
+  <meta name="twitter:image:alt" content="WATCHTOWER, bloqueur d'appels indésirables sur Android">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "@id": "https://watchtower.montironi.fr/#application",
+    "name": "WATCHTOWER",
+    "operatingSystem": "Android",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://watchtower.montironi.fr/",
+    "description": "WATCHTOWER est une application Android de blocage des appels indésirables avec filtrage local et hors ligne.",
+    "image": "https://watchtower.montironi.fr/assets/WATCHTOWER_Feature_Graphic_FR.png",
+    "inLanguage": "fr-FR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "3D.MONTI"
+    },
+    "featureList": [
+      "Blocage des appels indésirables",
+      "Règles par numéro, préfixe, pays ou zone géographique",
+      "Prise en charge des préfixes officiels de démarchage en France",
+      "Filtrage local et hors ligne",
+      "Aucun compte requis"
+    ]
+  }
+  </script>
   <link rel="icon" href="./favicon.ico?v=20260816" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=20260816">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=20260816">
@@ -15,8 +58,9 @@
   <link rel="stylesheet" href="./styles/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
   <header class="site-banner">
-    <img src="./assets/WATCHTOWER_Feature_Graphic_FR.png" alt="Banniere WATCHTOWER : Votre tranquillite sous protection.">
+    <img src="./assets/WATCHTOWER_Feature_Graphic_FR.png" alt="Banniere WATCHTOWER : Votre tranquillite sous protection." width="1024" height="500">
   </header>
   <div class="transition-nav">
     <div class="nav-inner">
@@ -24,7 +68,7 @@
         <a href="./" aria-current="page">Accueil</a>
         <a href="./analyses/bases-antispam-communautaires/">Bases communautaires</a>
         <a href="./privacy/">Confidentialite</a>
-        <a href="./support/">Support</a>
+        <a href="./contact/">Contact</a>
         <a href="./legal/">Mentions legales</a>
       </nav>
       <div class="controls">
@@ -33,11 +77,11 @@
       </div>
     </div>
   </div>
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="hero" aria-labelledby="home-title">
       <p class="eyebrow">Blocage intelligent des appels</p>
-      <h1 id="home-title">Votre tranquillite sous protection</h1>
-      <p class="lead">WATCHTOWER est concu pour vous aider a filtrer les appels indesirables avec une approche sobre, locale et respectueuse de votre vie privee.</p>
+      <h1 id="home-title">WATCHTOWER, bloqueur d’appels indésirables sur Android</h1>
+      <p class="lead">WATCHTOWER est une application Android qui filtre et bloque les appels indésirables directement sur votre téléphone, sans compte, sans publicité et sans connexion Internet nécessaire au filtrage.</p>
       <div class="actions">
         <a class="button primary" href="./privacy/">Lire la politique de confidentialite</a>
       </div>
@@ -50,15 +94,20 @@
     <section class="content-panel" aria-labelledby="mission-title">
       <p class="kicker">PROTECTION ACTIVE</p>
       <h2 id="mission-title">Retrouvez le calme sans manquer les appels importants</h2>
-      <p>Une fois activée, WATCHTOWER filtre vos appels en silence et rejette les indésirables avant même que votre téléphone ne sonne. Les préfixes officiels de démarchage en France sont déjà pris en charge, et vous gardez le contrôle grâce à vos propres règles par numéro, préfixe ou pays.</p>
-      <p>Vos numéros autorisés restent toujours prioritaires. Sans publicité, sans compte et sans connexion Internet, la protection fonctionne directement sur votre téléphone et vos données ne le quittent jamais.</p>
-      <p>Installez WATCHTOWER depuis Google Play et retrouvez un téléphone qui sonne pour les bonnes raisons.</p>
-      <div class="actions store-actions" data-google-play-url-required>
-        <span class="button primary store-link-pending" role="link" aria-disabled="true" tabindex="0" aria-label="Installer depuis Google Play - URL Google Play à fournir">Installer depuis Google Play</span>
-      </div>
+      <p>Une fois activée, WATCHTOWER filtre vos appels en silence et rejette les indésirables avant même que votre téléphone ne sonne. Les préfixes officiels de démarchage encadrés par l’ARCEP, notamment 01 62, 01 63, 02 70 et 02 71, sont déjà pris en charge, et vous gardez le contrôle grâce à vos propres règles par numéro, préfixe, pays ou zone géographique.</p>
+      <p>Vos numéros autorisés restent toujours prioritaires. Sans publicité, sans compte, sans serveur distant et sans connexion Internet nécessaire au filtrage, la protection fonctionne directement sur votre téléphone et vos données ne le quittent jamais.</p>
+      <p>Pour comprendre ce qu’une base partagée apporte réellement, consultez notre <a href="/analyses/bases-antispam-communautaires/">analyse des bases antispam communautaires</a>.</p>
+    </section>
+    <section class="content-panel closed-test-panel" aria-labelledby="closed-test-title">
+      <h2 id="closed-test-title">WATCHTOWER V4 est actuellement en test fermé</h2>
+      <p>L’application n’est pas encore disponible publiquement sur Google Play. Si vous souhaitez participer au test fermé, vous pouvez en faire la demande depuis la page Contact.</p>
+      <a class="google-play-badge-shell" href="https://play.google.com/store/apps/details?id=fr.monti3d.watchtower" target="_blank" rel="noopener noreferrer" aria-label="Installer depuis Google Play - ouvre la fiche WATCHTOWER sur Google Play dans un nouvel onglet">
+        <img class="google-play-badge" src="./assets/google-play-badge-fr.png" width="646" height="250" alt="Installer depuis Google Play">
+      </a>
+      <div class="actions closed-test-actions"><a class="button primary" href="/contact/?motif=test-ferme">Demander à participer au test fermé</a></div>
     </section>
   </main>
-  <footer class="site-footer"><div class="footer-inner"><span>WATCHTOWER - © 3D.MONTI - 2026</span><div class="footer-links"><a href="/">Accueil</a><a href="/analyses/bases-antispam-communautaires/">Bases communautaires</a><a href="/privacy/">Confidentialité</a><a href="/support/">Support</a><a href="/legal/">Mentions légales</a></div></div></footer>
+  <footer class="site-footer"><div class="footer-inner"><span>WATCHTOWER - © 3D.MONTI - 2026</span><div class="footer-links"><a href="/">Accueil</a><a href="/analyses/bases-antispam-communautaires/">Bases communautaires</a><a href="/privacy/">Confidentialité</a><a href="/contact/">Contact</a><a href="/legal/">Mentions légales</a></div></div></footer>
   <script src="./scripts/theme.js"></script>
   <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7a70b020cf354fbd866a14ccbd38a144"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

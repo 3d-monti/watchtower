@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://watchtower.montironi.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/analysis/community-antispam-databases/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/en/analysis/community-antispam-databases/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/analysis/community-antispam-databases/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/analyses/bases-antispam-communautaires/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/privacy/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/privacy/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/contact/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/contact/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/legal/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/legal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/legal/" />
+  </url>
+  <url>
+    <loc>https://watchtower.montironi.fr/en/legal/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://watchtower.montironi.fr/legal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://watchtower.montironi.fr/en/legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://watchtower.montironi.fr/legal/" />
+  </url>
+</urlset>
