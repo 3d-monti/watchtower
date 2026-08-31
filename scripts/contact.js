@@ -20,8 +20,7 @@
           "",
           "Je confirme que l’adresse indiquée ci-dessus est celle du compte Google que j’utilise sur Google Play.",
           "",
-          "Modèle de téléphone :",
-          "Version d’Android :"
+          "Merci."
         ].join("\n")
       }
     : {
@@ -30,12 +29,11 @@
         message: [
           "Hello,",
           "",
-          "I would like to join the WATCHTOWER closed test.",
+          "I would like to participate in the WATCHTOWER closed test.",
           "",
-          "I confirm that the email address entered above belongs to the Google Account I use on Google Play.",
+          "I confirm that the address entered above belongs to the Google Account I use on Google Play.",
           "",
-          "Phone model:",
-          "Android version:"
+          "Thank you."
         ].join("\n")
       };
 
