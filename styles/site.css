@@ -54,9 +54,8 @@ img { max-width: 100%; }
 
 .site-banner img {
   display: block;
-  width: min(100%, 1024px);
+  width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 .transition-nav {
@@ -205,8 +204,9 @@ h3 { font-size: 1.08rem; }
 .closed-test-panel h2 { max-width: 760px; }
 
 .google-play-badge-shell {
-  display: inline-flex;
-  margin-top: 18px;
+  display: flex;
+  width: fit-content;
+  margin: 18px auto 0;
   padding: 18px;
 }
 
@@ -217,7 +217,10 @@ h3 { font-size: 1.08rem; }
   height: auto;
 }
 
-.closed-test-actions { margin-top: 4px; }
+.closed-test-actions {
+  justify-content: center;
+  margin-top: 4px;
+}
 
 .contact-form {
   display: grid;
