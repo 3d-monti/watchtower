@@ -334,7 +334,7 @@ h3 { font-size: 1.08rem; }
 }
 
 .analysis-main {
-  width: min(100%, 960px);
+  width: min(100%, var(--max));
 }
 
 .analysis-header {
@@ -353,7 +353,7 @@ h3 { font-size: 1.08rem; }
 
 .analysis-article {
   max-width: 880px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .article-section {
