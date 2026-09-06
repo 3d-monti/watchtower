@@ -275,6 +275,21 @@ h3 { font-size: 1.08rem; }
   opacity: 0.68;
 }
 
+.confirmation-panel {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.confirmation-panel .lead {
+  margin: 0 auto;
+}
+
+.confirmation-actions {
+  justify-content: center;
+}
+
 .contact-honeypot {
   position: absolute;
   width: 1px;

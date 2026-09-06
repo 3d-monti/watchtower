@@ -68,13 +68,13 @@
     ? {
         idle: "Envoyer",
         sending: "Envoi en cours...",
-        success: "Votre message a bien été envoyé. Nous vous répondrons dès que possible.",
+        successUrl: "./success/",
         error: "L’envoi a échoué. Veuillez réessayer dans quelques instants."
       }
     : {
         idle: "Send",
         sending: "Sending...",
-        success: "Your message has been sent. We’ll reply as soon as possible.",
+        successUrl: "./success/",
         error: "The message could not be sent. Please try again in a few moments."
       };
 
@@ -115,7 +115,7 @@
       form.reset();
       preselectSubject();
       syncClosedTestFields();
-      status.textContent = messages.success;
+      window.location.assign(messages.successUrl);
     } catch (_error) {
       status.textContent = messages.error;
     } finally {
