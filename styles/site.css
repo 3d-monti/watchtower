@@ -176,7 +176,7 @@ h3 {
   letter-spacing: 0;
 }
 
-h1 { font-size: clamp(2.1rem, 6vw, 4.7rem); }
+h1 { font-size: clamp(2rem, 4vw, 3rem); }
 h2 { font-size: clamp(1.55rem, 3vw, 2.3rem); }
 h3 { font-size: 1.08rem; }
 
@@ -370,7 +370,6 @@ h3 { font-size: 1.08rem; }
 
 .analysis-header h1 {
   max-width: 900px;
-  font-size: clamp(2rem, 5vw, 3.9rem);
 }
 
 .analysis-header .lead {
@@ -609,7 +608,9 @@ h3 { font-size: 1.08rem; }
   .menu-toggle {
     grid-area: menu;
     display: inline-flex;
-    justify-self: start;
+    width: 100%;
+    box-sizing: border-box;
+    justify-self: stretch;
   }
 
   .primary-nav {
@@ -663,6 +664,22 @@ h3 { font-size: 1.08rem; }
   .range-example,
   .key-stats { grid-template-columns: 1fr; }
 
+  .table-scroll { overflow-x: visible; }
+
+  .analysis-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .analysis-table th,
+  .analysis-table td {
+    padding: 11px 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .analysis-table th:last-child,
+  .analysis-table td:last-child { width: 5.75rem; }
+
   .footer-inner {
     justify-content: center;
     text-align: center;
@@ -672,8 +689,6 @@ h3 { font-size: 1.08rem; }
 }
 
 @media (max-width: 360px) {
-  .analysis-header h1 { font-size: 1.85rem; }
-
   .article-section { padding-block: 34px; }
 
   .range-example dd { font-size: 1rem; }
