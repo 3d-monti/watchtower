@@ -49,6 +49,8 @@ a { color: inherit; }
 img { max-width: 100%; }
 
 .site-banner {
+  width: min(100%, var(--max));
+  margin: 0 auto;
   background: var(--deep);
 }
 
@@ -59,6 +61,8 @@ img { max-width: 100%; }
 }
 
 .transition-nav {
+  width: min(100%, var(--max));
+  margin: 0 auto;
   background: linear-gradient(180deg, #010C22 0%, #021731 38%, #032044 70%, #061A33 100%);
 }
 
@@ -104,7 +108,8 @@ img { max-width: 100%; }
 
 .primary-nav a,
 .control-link,
-.theme-toggle {
+.theme-toggle,
+.menu-toggle {
   min-height: 40px;
   display: inline-flex;
   align-items: center;
@@ -132,6 +137,12 @@ img { max-width: 100%; }
 }
 
 .theme-toggle {
+  cursor: pointer;
+  font: inherit;
+}
+
+.menu-toggle {
+  display: none;
   cursor: pointer;
   font: inherit;
 }
@@ -559,6 +570,8 @@ h3 { font-size: 1.08rem; }
 }
 
 .site-footer {
+  width: min(100%, var(--max));
+  margin: 0 auto;
   border-top: 1px solid var(--line);
   background: var(--deep);
 }
@@ -584,6 +597,47 @@ h3 { font-size: 1.08rem; }
 .footer-links a { text-decoration: none; }
 
 @media (max-width: 900px) {
+  .nav-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "menu"
+      "navigation"
+      "controls";
+    padding: 12px 14px 34px;
+  }
+
+  .menu-toggle {
+    grid-area: menu;
+    display: inline-flex;
+    justify-self: start;
+  }
+
+  .primary-nav {
+    grid-area: navigation;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: visible;
+    scrollbar-width: none;
+    padding-bottom: 0;
+  }
+
+  .primary-nav.is-open { display: flex; }
+
+  .primary-nav a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .controls {
+    grid-area: controls;
+    display: none;
+    justify-content: flex-start;
+  }
+
+  .nav-inner.menu-open .controls { display: flex; }
+
   .number-journey {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -597,20 +651,14 @@ h3 { font-size: 1.08rem; }
 }
 
 @media (max-width: 760px) {
-  .nav-inner {
-    grid-template-columns: 1fr;
-    padding: 12px 14px 34px;
-  }
-
-  .controls { justify-content: space-between; }
-
   main { padding: 30px 14px 42px; }
 
   .grid { grid-template-columns: 1fr; }
 
   .primary-nav a,
   .control-link,
-  .theme-toggle { padding-inline: 11px; }
+  .theme-toggle,
+  .menu-toggle { padding-inline: 11px; }
 
   .range-example,
   .key-stats { grid-template-columns: 1fr; }
