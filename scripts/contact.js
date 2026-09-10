@@ -9,14 +9,15 @@
   const isFrench = document.documentElement.lang === "fr";
   const defaultEmailLabel = emailLabel.textContent;
   const defaultEmailHint = emailHint.textContent;
-  const closedTestCopy = isFrench
+  const earlyAccessValue = isFrench ? "acces-anticipe" : "early-access";
+  const earlyAccessCopy = isFrench
     ? {
         emailLabel: "Adresse du compte Google utilisée sur Google Play",
-        emailHint: "Utilisez l’adresse exacte du compte Google avec lequel vous ouvrirez le lien du test. Il peut s’agir d’une adresse Gmail ou d’une autre adresse associée à votre compte Google.",
+        emailHint: "Indiquez l’adresse exacte du compte Google utilisé sur Google Play. Cette adresse est nécessaire pour vous ajouter à la liste des testeurs.",
         message: [
           "Bonjour,",
           "",
-          "Je souhaite participer au test fermé de WATCHTOWER.",
+          "Je souhaite rejoindre le programme de testeurs de WATCHTOWER afin de recevoir les prochaines améliorations avant leur publication générale.",
           "",
           "Je confirme que l’adresse indiquée ci-dessus est celle du compte Google que j’utilise sur Google Play.",
           "",
@@ -25,8 +26,50 @@
       }
     : {
         emailLabel: "Google Account email address used on Google Play",
-        emailHint: "Enter the exact Google Account email address you will use to open the testing link. This may be a Gmail address or another email address associated with your Google Account.",
+        emailHint: "Enter the exact Google Account email address you use on Google Play. This address is required to add you to the tester list.",
         message: [
+          "Hello,",
+          "",
+          "I would like to join the WATCHTOWER testing programme to receive upcoming improvements before their public release.",
+          "",
+          "I confirm that the address entered above belongs to the Google Account I use on Google Play.",
+          "",
+          "Thank you."
+        ].join("\n")
+      };
+
+  const legacyAutomaticMessages = isFrench
+    ? [
+        [
+          "Bonjour,",
+          "",
+          "Je souhaite rejoindre le programme de test de WATCHTOWER afin d’accéder aux prochaines versions avant leur publication générale.",
+          "",
+          "Je confirme que l’adresse indiquée ci-dessus est celle du compte Google que j’utilise sur Google Play.",
+          "",
+          "Merci."
+        ].join("\n"),
+        [
+          "Bonjour,",
+          "",
+          "Je souhaite participer au test fermé de WATCHTOWER.",
+          "",
+          "Je confirme que l’adresse indiquée ci-dessus est celle du compte Google que j’utilise sur Google Play.",
+          "",
+          "Merci."
+        ].join("\n")
+      ]
+    : [
+        [
+          "Hello,",
+          "",
+          "I would like to join the WATCHTOWER testing programme to access upcoming versions before their public release.",
+          "",
+          "I confirm that the address entered above belongs to the Google Account I use on Google Play.",
+          "",
+          "Thank you."
+        ].join("\n"),
+        [
           "Hello,",
           "",
           "I would like to participate in the WATCHTOWER closed test.",
@@ -35,30 +78,31 @@
           "",
           "Thank you."
         ].join("\n")
-      };
+      ];
 
-  const syncClosedTestFields = () => {
-    const closedTestSelected = subject.value === "test-ferme";
-    emailLabel.textContent = closedTestSelected ? closedTestCopy.emailLabel : defaultEmailLabel;
-    emailHint.textContent = closedTestSelected ? closedTestCopy.emailHint : defaultEmailHint;
+  const syncEarlyAccessFields = () => {
+    const earlyAccessSelected = subject.value === earlyAccessValue;
+    emailLabel.textContent = earlyAccessSelected ? earlyAccessCopy.emailLabel : defaultEmailLabel;
+    emailHint.textContent = earlyAccessSelected ? earlyAccessCopy.emailHint : defaultEmailHint;
 
-    if (closedTestSelected && message.value === "") {
-      message.value = closedTestCopy.message;
-    } else if (!closedTestSelected && message.value === closedTestCopy.message) {
+    if (earlyAccessSelected && message.value === "") {
+      message.value = earlyAccessCopy.message;
+    } else if (!earlyAccessSelected && [earlyAccessCopy.message, ...legacyAutomaticMessages].includes(message.value)) {
       message.value = "";
     }
   };
 
   const params = new URLSearchParams(window.location.search);
   const preselectSubject = () => {
-    if (params.get("motif") === "test-ferme") {
-      subject.value = "test-ferme";
+    const motif = params.get("motif");
+    if (motif === earlyAccessValue || motif === "test-ferme") {
+      subject.value = earlyAccessValue;
     }
   };
 
-  subject.addEventListener("change", syncClosedTestFields);
+  subject.addEventListener("change", syncEarlyAccessFields);
   preselectSubject();
-  syncClosedTestFields();
+  syncEarlyAccessFields();
 
   const submitButton = form.querySelector('button[type="submit"]');
   const status = document.querySelector("#contact-form-status");
@@ -114,7 +158,7 @@
 
       form.reset();
       preselectSubject();
-      syncClosedTestFields();
+      syncEarlyAccessFields();
       window.location.assign(messages.successUrl);
     } catch (_error) {
       status.textContent = messages.error;

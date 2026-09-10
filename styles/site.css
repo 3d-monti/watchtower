@@ -193,6 +193,20 @@ h3 { font-size: 1.08rem; }
   gap: 10px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+}
+
+.hero-actions .hero-google-play {
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -212,8 +226,6 @@ h3 { font-size: 1.08rem; }
   color: #F4F8FF;
 }
 
-.closed-test-panel h2 { max-width: 760px; }
-
 .google-play-badge-shell {
   display: flex;
   width: fit-content;
@@ -228,9 +240,58 @@ h3 { font-size: 1.08rem; }
   height: auto;
 }
 
-.closed-test-actions {
+.release-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.release-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.release-action > p {
+  width: min(100%, 42rem);
+  margin-inline: auto;
+}
+
+.release-action .google-play-badge-shell {
+  align-self: center;
+  justify-self: center;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.release-test-actions {
   justify-content: center;
-  margin-top: 4px;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.release-note {
+  margin: 0 auto;
+  max-width: 42rem;
+  font-size: 0.94rem;
+}
+
+@media (min-width: 761px) {
+  @supports (grid-template-rows: subgrid) {
+    .release-actions {
+      grid-template-rows: auto auto auto auto;
+    }
+
+    .release-action {
+      display: grid;
+      grid-row: span 4;
+      grid-template-rows: subgrid;
+      align-items: center;
+    }
+  }
 }
 
 .contact-form {
@@ -655,6 +716,14 @@ h3 { font-size: 1.08rem; }
   main { padding: 30px 14px 42px; }
 
   .grid { grid-template-columns: 1fr; }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .release-actions { grid-template-columns: 1fr; }
 
   .primary-nav a,
   .control-link,
